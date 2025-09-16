@@ -116,3 +116,25 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Mobile App Specific Styles */
+.mobile-app {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+.ios-app {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.android-app {
+  /* Android specific styles */
+}
+
+.mobile-app-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
